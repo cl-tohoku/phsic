@@ -24,7 +24,7 @@ PHSIC can give high scores to consistent pairs in terms of the given pairs:
 ## Installation
 
 ```
-$ pip install phsic
+$ pip install phsic-cli
 ```
 
 This will install `phsic` command to your environment:
