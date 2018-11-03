@@ -1,6 +1,6 @@
 # Pointwise Hilbert–Schmidt Independence Criterion (PHSIC)
 
-Compute *co-occurrence* between two objects utilizing *similarities*.
+PHSIC computes co-occurence strength between sentences with short learning time.
 
 For example, given consistent sentence pairs:
 
@@ -20,6 +20,12 @@ PHSIC can give high scores to consistent pairs in terms of the given pairs:
 | They had breakfast at the hotel.             | They are full now.    | 0.1134 |
 | They had breakfast at an Italian restaurant. | They are stuffed now. | 0.0023 |
 | I have dinner.                               | I have dinner again.  | 0.0023 |
+
+The details can be found in [our paper](https://aclanthology.info/papers/D18-1203/d18-1203):
+
+[Sho Yokoi](http://www.cl.ecei.tohoku.ac.jp/~yokoi/), [Sosuke Kobayashi](https://soskek.github.io/), [Kenji Fukumizu](http://www.ism.ac.jp/~fukumizu/), [Jun Suzuki](http://www.cl.ecei.tohoku.ac.jp/~jun/), Kentaro Inui.
+**Pointwise HSIC: A Linear-Time Kernelized Co-occurrence Norm for Sparse Linguistic Expressions.**
+In Proceedings of [the 2018 Conference on Empirical Methods in Natural Language Processing](http://emnlp2018.org/) (EMNLP), pp.1763–1775 , 2018.
 
 ## Installation
 
@@ -76,6 +82,8 @@ $ cat toy.Gaussian-1.0-SumBov-FasttextEn.Gaussian-1.0-SumBov-FasttextEn.3.3.phsi
 ```
 
 ## Citation
+
+If you make use of this software we would appreciate it if you would cite the paper:
 
 ```
 @InProceedings{D18-1203,
