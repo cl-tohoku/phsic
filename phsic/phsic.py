@@ -56,13 +56,13 @@ class PHSIC():
         """
         print('phsic.predict_batch_XY()...', file=sys.stderr)
         # return np.dot(X - self.x_mean, self.CXY @ (X - self.y_mean))
-        return np.array([self.predict(x, y) for x, y in zip(X, Y)])
+        return np.sum((X - self.x_mean) @ self.CXY * (Y - self.y_mean), axis=-1)
 
     def predict_batch_training_data(self):
         print('phsic.predict_batch_training_data()...', file=sys.stderr)
         X = self.X
         Y = self.Y
-        return np.array([self.predict(x, y) for x, y in zip(X, Y)])
+        return np.sum((X - self.x_mean) @ self.CXY * (Y - self.y_mean), axis=-1)
 
 
 class PHSIC_ICD():
